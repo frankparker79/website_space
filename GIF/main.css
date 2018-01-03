@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+ 
+}
+/*header section*/
+#banner{
+min-height: 100vh;
+background: url(../images/gif.jpeg);/*okresla ktory obrazek tworzy tlo*/
+background-attachment: fixed;/*okresla czy obrazek jest staly czy sie przewija z elementem. fixed - jest zablokowany*/
+background-position: center;/* polozenie obrazka. Center - wysierodkowany*/
+background-size: cover;/*skaluje obraz wedlug njamniejszego boku, aby wypelnial cala powierzchnie pojemnika.*/
+background-repeat: no-repeat;/*kontrolowanie aby obrazek nie powtarzal sie. no-repeat - nie powtarza sie.*/
+display: flex;
+align-items: center;
+justify-content: center;
+animation-name: fadeIn;
+animation-duration: 5s;
+}
+.gif{
+    
+    border: 2px solid #e6af2e;
+}
+
+.banner-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-btn button{
+    font-size: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+    margin: 10px 200px;
+    background:transparent;/* transparent sprawia ze tlem jest obrazek*/
+    color: #e6af2e;
+    border: 2px solid #e6af2e;
+}
+
+.banner-btn button:hover {
+    color: #e0e2db;
+    background: #e6af2e;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+
+@media screen and (min-width:576px)/*Responsive media screen (zakres dzialania kodu CSS)
+okresla typ docelowych mediow. Screen - przeznaczone dla kolorowych ekranow komputerowych*/{
+nav ul{
+    display: flex;
+    flex-wrap: wrap;/* elementy ,ktore nie zmieszcza sie w dostepnej szerokosci , zostana przeniesionedo kolejnego wiersza,
+    jak wyrazy tekstu*/ 
+    align-items: baseline;/* zrównuje linie bazowe(poziomych prostych,łaczących podstawy liter tekstu)*/
+    justify-content: space-between;
+}
