@@ -50,7 +50,7 @@ animation-duration: 5s;
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
-
+}
 
 @media screen and (min-width:576px)/*Responsive media screen (zakres dzialania kodu CSS)
 okresla typ docelowych mediow. Screen - przeznaczone dla kolorowych ekranow komputerowych*/{
