@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+ 
+}
+#banner{
+    min-height: 100vh;
+    background: url(../images/Aboutme2.jpg);/*okresla ktory obrazek tworzy tlo*/
+    background-attachment: fixed;/*okresla czy obrazek jest staly czy sie przewija z elementem. fixed - jest zablokowany*/
+    background-position: center;/* polozenie obrazka. Center - wysierodkowany*/
+    background-size: cover;/*skaluje obraz wedlug njamniejszego boku, aby wypelnial cala powierzchnie pojemnika.*/
+    background-repeat: no-repeat;/*kontrolowanie aby obrazek nie powtarzal sie. no-repeat - nie powtarza sie.*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* h1 */
+h1{
+
+    color: #e0e2db;
+    background: #e6af2e;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin: -750px 0 0 0;
+    background:transparent;/* transparent sprawia ze tlem jest obrazek*/
+    color: #e6af2e;
+}
+/* end h1 */
+/*About me button */
+.banner-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-btn button{
+    font-size: 30px;
+    padding: 15px;
+    text-transform: uppercase;
+    margin: 10px 200px;
+    background:transparent;/* transparent sprawia ze tlem jest obrazek*/
+    color: #e6af2e;
+    border: 2px solid #e6af2e;
+}
+.banner-btn button:hover {
+    color: #e0e2db;
+    background: #e6af2e;
+}
+/* end off button */
