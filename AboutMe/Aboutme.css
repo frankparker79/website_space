@@ -7,6 +7,26 @@ body {
     font-family: 'Roboto', sans-serif;
  
 }
+/*****************nav************************/
+nav{
+    list-style-type: none; /*definiuje wyglad wypunktowania listy*/
+    border-top : 6px solid #e6af2e;
+    background: #191716;
+
+}
+nav h1{
+    text-decoration: none;/*dekoracja tekstu*/
+    display: block; /*pozycjonowanie wyswietlania, block - odstep z gory i z dolu*/
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 15px 25px; /*przestrzeń w okol napisu*/
+    color: #e6af2e;
+    animation-name: fadeIn;
+    animation-duration: 10s;
+    
+
+}
 #banner{
     min-height: 100vh;
     background: url(../images/Aboutme2.jpg);/*okresla ktory obrazek tworzy tlo*/
@@ -20,19 +40,6 @@ body {
     animation-name: fadeIn;
     animation-duration: 5s;
 }
-
-/* h1 */
-h1{
-
-    color: #e0e2db;
-    background: #e6af2e;
-    font-size: 70px;
-    text-transform: uppercase;
-    margin: -750px 0 0 0;
-    background:transparent;/* transparent sprawia ze tlem jest obrazek*/
-    color: #e6af2e;
-}
-/* end h1 */
 
 /* p */
 p{
