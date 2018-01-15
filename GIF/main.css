@@ -27,6 +27,11 @@ animation-duration: 5s;
     
     border: 2px solid #e6af2e;
 }
+.picture{
+    width: 1920px;
+    height: 850px;
+    
+}
 
 .banner-btn{
     display: flex;
